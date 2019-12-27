@@ -5,50 +5,49 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 --><!-- https://netbeans.apache.org/kb/docs/webclient/html5-gettingstarted.html -->
 <html>
-    <head>
-        <title>Title Of Webpage</title>
-        <meta charset="UTF-8">    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type ="text/javascript" src ="bower_components/jquery/dist/jquery.js"></script>
-        <script type ="text/javascript" src ="bower_components/jquery/dist/jquery-ui.js"></script>
-        
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("#infolist").accordion({
-                autoHeight: false
-            });
-            });
-            </script>
-        
-        <link type ="text/css" rel="stylesheet" href="css/basecss.css">
-        <style type ="text/css">
-            ul{list-style-type: none}
-            img{
-                margin-right: 6px;
-                float: left;
-                border: 4px solid;
-            }
-            
   
+
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/basecss.css">
+
+        <style id="infolist" type="text/css">
+            ul {list-style-type: none}
+            img {
+                margin-right: 20px;
+                float:left;
+                border: 10px solid;
+            }
         </style>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#infolist").accordion({
+                    autoHeight: false
+                });
+            });
+        </script>
     </head>
+
     <body>
-        <div id = "infolist"> 
-            <h3><a href = "#">Chaz Hurd</a></h3>
-            <div>  
-                <img src="pix/isiame222.jpg" alt=""/>
+        <div id = "infolist">
+
+            <h3><a href="#">Chaz Hurd</a></h3>
+            <div>
+                <img id="infolist" src="pix/maryadams.jpg" alt="Mary Adams">
                 <ul>
-                <li><h4>Software Engineer</h4></li>
-                <li><b>Phone:</b> (509)701-8173</li>
-                <li><b>Email:</b> 1chazhurd@gmail.com</li>
-                <li><b>LinkedIn:</b> <a href = "www.linkedin.com/in/chazhurd"> www.linkedin.com/in/chazhurd</li>
+                    <li><h4>Software Eng. Student</h4></li>
+                    <li><b>Email</b> 1chazhurd@gmail.com</li>
+                    <li><b>LinkedIn</b> 102 Bldg 1</li>
+                    <li><b>ISO</b> Jr Level Software Eng. Position</li>
                 </ul>
-                <br clear ="all">
-                <br>
+                <br clear="all">
             </div>
-            
-            <!--Extra-->
-            
+
             <h3><a href="#">John Matthews</a></h3>
             <div>
                 <img src="pix/johnmatthews.jpg" alt="John Matthews">
@@ -84,11 +83,6 @@ and open the template in the editor.
                 </ul>
                 <br clear="all">
             </div>
-        </div>
-            
-        
-  
-        
         </div>
     </body>
 </html>
